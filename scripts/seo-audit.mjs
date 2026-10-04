@@ -11,7 +11,7 @@ if (!existsSync(dist)) {
   console.error('SEO audit requires a production build. Run npm run build first.');
   process.exit(1);
 }
-
+    
 function filesIn(directory, predicate) {
   return readdirSync(directory).flatMap((name) => {
     const path = join(directory, name);
